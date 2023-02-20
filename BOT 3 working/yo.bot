@@ -1,0 +1,18 @@
+{
+    "name": "yo",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "name": "http://localhost:3978/api/message",
+            "id": "89f997f0-b11c-11ed-b6e2-0b88ea14755f",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/message"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "path": "/home/mindpath/Code@mindpath/BOT 3/yo.bot",
+    "overrides": null
+}

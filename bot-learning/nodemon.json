@@ -1,0 +1,14 @@
+{
+    "watch": [
+        "src",
+        ".env"
+    ],
+    "ext": "ts",
+    "ignore": [
+        "src/**/*.spec.ts"
+    ],
+    "exec": "npm run start:dev",
+    "env": {
+        "NODE_ENV": "development"
+    }
+}

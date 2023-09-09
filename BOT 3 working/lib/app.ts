@@ -18,6 +18,12 @@ const adapter = new BotFrameworkAdapter({
 const conversationState = new ConversationState(new MemoryStorage());
 
 adapter.use(conversationState);
+server.use(myMiddleware); // just for checking
+function myMiddleware(req: Request, res: Response, next: Function) {
+    // Your middleware logic here
+    console.log('Middleware executed'); // 
+    next(); // Call next to pass control to the next middleware or route handler
+}
 
 server.post("/api/message", (req, res) => {
     adapter.processActivity(req, res, async (context) => {
